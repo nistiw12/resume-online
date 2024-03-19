@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 32px;
+    color: #008080ff; /* Ubah nilai warna */
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    color: rgb(100, 0, 100); /* Ubah nilai warna */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #4B0082; /* Jika tidak memerlukan transparansi, warna bisa menggunakan format #4B0082 */
+    margin-bottom: 5px;
+}
+
+p, ul, td {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+img {
+    max-width: 110%;
+    height: auto;
+    border-radius: 110%;
+    
+}
+
+.resume-details {
+    display: none;
+}
+
+.container {
+    width: 300px; /* sesuaikan dengan ukuran yang diinginkan */
+    height: 300px; /* sesuaikan dengan ukuran yang diinginkan */
+    display: flex;
+    justify-content: center; /* membuat konten di tengah secara horizontal */
+    align-items: center; /* membuat konten di tengah secara vertikal */
+    overflow: hidden;
+    border-radius: 100%; /* membuat sudut foto menjadi bulat */
+  }
+
+.tamu {
+    width: 700px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Menengahkan teks */
+}

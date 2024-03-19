@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Portfolio</title>
+<style>
+    .portfolio-info {
+        display: none;
+    }
+</style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nisti Azaliya Azmi</h1>
+        <p>Rancaekek, Bandung, Jawa Barat</p>
+        <p>Instagram : nstyxz_ | No HP: (+62) 857-9443-0249</p>
+    </header>
+<br>
+    <div class="container">
+        <img src="1.jpg" alt="Foto" class="bulat" id="profile-pic">
+      </div>
+ <br>
+ <br>
+ <br>
+<div class="portfolio">
+    <div class="portfolio-item">
+        <h2>Tentang Saya</h2>
+        <p>Klik sinii</p>
+        <div class="portfolio-info">
+            <pre>
+            <p> Gamer yang berpengalaman dengan dedikasi tinggi terhadap industri permainan video. 
+                Memiliki pengetahuan yang mendalam tentang berbagai genre permainan dan keterampilan 
+                teknis yang kuat dalam bermain dan analisis gameplay. 
+                Fleksibel dalam beradaptasi dengan perubahan permainan dan mampu bekerja secara 
+                tim dalam lingkungan kompetitif. 
+                Memiliki komitmen untuk terus mengembangkan keterampilan dan pengetahuan 
+                dalam industri yang dinamis ini.</p>
+        </pre>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="portfolio-item">
+        <h2>Pendidikan</h2>
+        <p>Sinii</p>
+        <div class="portfolio-info">
+            <pre>
+            <p>Sarjana Bisnis Digital
+                Universitas Masoem
+                Tahun: 2022 - 2026
+                Fokus pada pengembangan perangkat lunak dan aplikasi, dengan minat khusus dalam pengembangan permainan.</p>
+            </pre>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="portfolio-item">
+        <h2>Pengalam</h2>
+        <p>Klik klik</p>
+        <div class="portfolio-info">
+            <pre>
+            <p>Gamer Profesional
+
+                Periode: 2018 - Sekarang
+                Berpartisipasi dalam berbagai turnamen dan kompetisi permainan video.
+                Bermain dalam tim dan secara individu, menghasilkan hasil yang mengesankan dalam berbagai platform permainan.
+                Streamer Gaming
+                
+                Periode: 2020 - Sekarang
+                Membangun komunitas penggemar yang kuat melalui streaming berbagai permainan.
+                Berinteraksi dengan pemirsa secara aktif, memberikan tips dan trik, serta mempromosikan budaya gaming yang positif.</p>
+            </pre>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="portfolio-item">
+        <h2>Skill</h2>
+        <p>Pencet ini</p>
+        <div class="portfolio-info">
+            <pre>
+            <p> Penguasaan dalam berbagai genre permainan, termasuk game strategi, tembak-menembak, peran, dan lain-lain.
+                Keterampilan analitis yang kuat untuk memahami mekanika permainan dan mengembangkan strategi yang efektif.
+                Kemampuan komunikasi yang baik untuk berinteraksi dengan pemirsa saat streaming dan berkolaborasi dengan tim dalam turnamen.
+                Keterampilan manajemen waktu yang baik untuk mempertahankan keseimbangan antara bermain game, streaming, dan kewajiban lainnya.</p>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="tamu">
+    <h2>Buku Tamu</h2>
+    <form id="guestBookForm">
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <input type="text" class="form-control" id="name" placeholder="Masukan namamu">
+      </div>
+      <div class="form-group">
+        <label for="comment">Komen</label>
+        <textarea class="form-control" id="comment" rows="3" placeholder="Masukan komenmu"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+  </div>
+  
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+    // Function to handle form submission
+    $('#guestBookForm').submit(function(event) {
+      event.preventDefault(); // Prevent default form submission
+      // Alert the user
+      alert('Terimakasih! ini hanya sebagai UI saja dan belum bisa menyimpan ke database');
+      // Clear the form fields
+      $('#name').val('');
+      $('#comment').val('');
+    });
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".portfolio-item").click(function(){
+            // Cari elemen portfolio-info yang berdekatan dengan portfolio-item yang diklik
+            var portfolioInfo = $(this).find(".portfolio-info");
+
+            // Jika portfolio-info tidak terlihat, jalankan efek slideDown
+            if (portfolioInfo.is(":hidden")) {
+                portfolioInfo.slideDown();
+            } else {
+                // Jika sudah terlihat, sembunyikan dengan efek slideUp
+                portfolioInfo.slideUp();
+            }
+        });
+    });
+    
+</script>
+</body>
+</html>
+
+    <script src="script.js"></script>
+</body>
+</html>
